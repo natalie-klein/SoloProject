@@ -27,6 +27,7 @@ class App extends React.Component {
     }
 
      getCategory (category) {
+         console.log('cat cat caty')
          const that = this;
         axios.get(url+category)
         .then(function (response) {
@@ -187,7 +188,7 @@ class App extends React.Component {
     }>
       <img src={props.link}/>
       <br></br>
-      <span style={{display: props.currStyle}} >{props.word}</span>
+      <span className="vocabWord" style={{display: props.currStyle }} >{props.word}</span>
     </button>
   );
 
@@ -234,6 +235,8 @@ class CategoryButtons extends React.Component{
               <button onClick={() => this.props.getCategory('animal')} className="cat" >Animals</button>
               <button onClick={() => this.props.getCategory('food')}  className="cat">Food</button>
               <button onClick={() => this.props.getCategory('transportation')}  className="cat">Transportation</button>
+              <button onClick={() => this.props.getCategory('clothes')}  className="cat">Clothes</button>
+              <button onClick={() => this.props.getCategory('classroom')}  className="cat">Classroom</button>
         </div>
         );
     }

@@ -1,3 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Candal);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+
+h1 {
+    position: relative;
+    background-image: -webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%,  #3c1360 54%, #bda1dc 58%,purple 90%, #bda1dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px #f5f5f5;
+    font-size: 150px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  h1:before {
+    content: 'CHROME';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    /* background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%); */
+    background-position:-680px 0;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0;
+    padding-right: 300px;
+    -webkit-animation-name: chrome_effect;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+
+
 body {
     background: linear-gradient(to top, teal, #bcd4e6);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -25,11 +65,11 @@ button {
       border-radius: 6px; 
     }
 
-h1 {
+/* h1 {
     text-align: center;
     color: teal;
     font-size: 55px;
-    }
+    } */
 
 
 h2 {
@@ -88,7 +128,9 @@ button.cat:hover{
   }
 
   span.vocabWord {
-      display: none
+      text-decoration: bold;
+      font-size: 40px;
+      /* display: none */
   }
 
   .App {
