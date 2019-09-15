@@ -13,8 +13,8 @@ app.use(function (req, res, next) {
 });
 
 categoryRouter.get('/:catName', (request, response) => {
-    //unpack params 
-    console.log(request.params.catName);
+    // unpack params 
+    // console.log(request.params.catName);
     db.query(`SELECT word, link FROM vocab where category = '${request.params.catName}'`, (err,result) => {
         if(err) response.send(err);
         response.send(result);
