@@ -52,7 +52,7 @@ button {
     text-transform: lowercase;
     letter-spacing: 1.5px;
     background: linear-gradient(to top, #CDF1F9, #B0D8F0);
-    color: teal;
+    color: #006b80;
     display: inline;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
@@ -64,12 +64,6 @@ button {
     button:active{
       border-radius: 6px; 
     }
-
-/* h1 {
-    text-align: center;
-    color: teal;
-    font-size: 55px;
-    } */
 
 
 h2 {
@@ -122,14 +116,17 @@ button.cat:hover{
   }
 
   .stopStart {
-      font-size: 50px;
-      color: white;
-      margin: -25px
+      font-size: 60px;
+      color: black;
+      margin-top: -25px;
+      margin-bottom: 25px;
+     
+
   }
 
   span.vocabWord {
-      text-decoration: bold;
-      font-size: 40px;
+      font-weight: bold;
+      font-size: 30px;
       /* display: none */
   }
 
@@ -138,8 +135,15 @@ button.cat:hover{
   }
 
   .team {
-      font-size: 30px; 
+      font-size: 40px; 
       /* padding: 80px;  */
+  }
+
+  .bunchOfTeamBunches{
+    background-color: white;
+    opacity: 0.6;
+    width: 45%;
+    border-radius: 7px;
   }
 
   .teamBunch {
@@ -147,10 +151,29 @@ button.cat:hover{
   }
 
   .pointies {
-      font-size: 50px;
+      font-size: 60px;
       padding-right: 20px;
   }
 
   #teamBunchLast{
-      padding-bottom: 50px;
+      padding-bottom: 30px;
+  }
+
+  .timerBunch{
+    background-color: white;
+    opacity: 0.6;
+    width: 45%;
+    height: 268px;
+    border-radius: 7px;
+    padding-top: 20px;
+  }
+
+  #timerButton{
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  #resetButton{
+      margin-top: -20px;
+    margin-bottom: 30px;
   }

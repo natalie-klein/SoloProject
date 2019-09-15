@@ -138,10 +138,10 @@ class App extends React.Component {
     render() {
  
       return (
-        <div>
+        <div className="timerBunch">
           <div className="stopStart"><p>{Math.floor(this.props.runningTime/1000)}</p></div>
-          <button onClick={this.props.handleClick}>{this.props.status ? 'Stop' : 'Start'}</button>
-          <button onClick={this.props.handleReset}>Reset</button>
+          <button id="startButton" onClick={this.props.handleClick}>{this.props.status ? 'Stop' : 'Start'}</button>
+          <button id="resetButton"onClick={this.props.handleReset}>Reset</button>
         </div>
       );
     }
@@ -201,7 +201,7 @@ class Scoreboard extends React.Component{
     render() {
  
       return (
-        <div>
+        <div className="bunchOfTeamBunches">
             <div className="teamBunch">
             <span className="team">Team 1: <span className="pointies">{this.props.pointsTeam1}</span></span>
             <button className="points" id="1+" onClick={this.props.IncrementItem}>+</button>

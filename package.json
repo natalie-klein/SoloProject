@@ -22,7 +22,8 @@
     "express": "^4.16.4",
     "pg": "^7.10.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-with-important-style": "^0.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

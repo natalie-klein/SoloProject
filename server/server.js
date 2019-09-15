@@ -29,4 +29,9 @@ app.get('/', (request, response) => {
 
 app.use('/category', categoryRouter)
 
+//global error handling 
+// app.use((err, req, res, next) => {
+//     res.status(400).json(`error: ${err}`)
+// })
+
 app.listen(3000);
