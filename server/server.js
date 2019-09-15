@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const db = require('./database.js')
 
+const PORT = 3000;
+
 const categoryRouter = express.Router();
 
 app.use(function (req, res, next) {
@@ -35,4 +37,4 @@ app.use('/category', categoryRouter)
 //     res.status(400).json(`error: ${err}`)
 // })
 
-app.listen(3000);
+app.listen(PORT, () => console.log(`app listening on port ${PORT}`));
